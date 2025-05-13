@@ -3,17 +3,17 @@
 import React from 'react';
 
 function ButttonComponent({
-  text = 'Click Me',        
-  onClick = () => {},
-  backgroundColor="#0054A6",        
-   textColor = ' #FFFFFF',     
-  fontSize = '1.2rem',         
-  padding = '.9rem 3rem',    
-  borderRadius = '2vw ', 
-  letterSpacing=''  ,
-  fontweight='500'
- //   position = 'absolute',   
-            
+  text = 'Click Me',
+  onClick = () => { },
+  backgroundColor = "#0054A6",
+  textColor = ' #FFFFFF',
+  fontSize = '1.2rem',
+  padding = '.9rem 3rem',
+  borderRadius = '2vw ',
+  letterSpacing = '',
+  fontweight = '500'
+  //   position = 'absolute',   
+
 }) {
   return (
     <button
@@ -22,14 +22,14 @@ function ButttonComponent({
         backgroundColor: backgroundColor,
         color: textColor,
         fontSize: fontSize,
-        fontFamily:'Pretendard Variable',
+        fontFamily: 'Pretendard Variable',
         padding: padding,
         borderRadius: borderRadius,
-        letterSpacing:letterSpacing,
-        fontweight:fontweight
+        letterSpacing: letterSpacing,
+        fontweight: fontweight
 
       }}
-     >
+    >
       {text}
     </button>
   );
@@ -37,4 +37,3 @@ function ButttonComponent({
 
 export default ButttonComponent;
 
- 
