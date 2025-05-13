@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+ html,body{
+margin: 0px;
+padding: 0px;
+font-size: 16px;
+ }
+
+ .hide-scrollbar {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+@media (max-width: 800px) {
+  .Main_feature {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 801px) {
+  .Main_feature {
+    width: calc(100vw - 240px);
+  }
+}
